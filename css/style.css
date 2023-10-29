@@ -167,13 +167,13 @@ nav a {
 
 .section-acd-1 {
     display: flex;
-    flex-wrap: wrap;
+
     margin: 20px;
     justify-content: start;
     align-items: center;
 }
 
-.section-acd-1 .div-acd-1 img {
+.div-acd-1-img {
     width: 300px;
     height: 350px;
     border-radius: 10px;
@@ -193,9 +193,10 @@ nav a {
 
 .section-acd-2 {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: start;
-    align-items: center;
+    align-items: start;
     margin: 40px;
     font-size: 25px;
     font-family: 'Farsan', 'Courier New', Courier, monospace;
@@ -209,36 +210,26 @@ nav a {
 
 /* CONTACTO-START */
 
-/* .body-contacto {
-    min-height: 100vh;
-} */
-
-/* .body-contacto form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
-.div-contact {
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
 }
-
 
 .form-contact {
     padding: 50px 55px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     text-align: center;
-    width: 30px;
+    width: 340px;
 }
-.input-group {
+
+.form-group {
     display: flex;
     flex-direction: column;
     text-align: left;
- }
+}
 
 .form-contact h2 {
     color: #283629;
@@ -252,7 +243,7 @@ nav a {
     margin-bottom: 15px;
 }
 
-.form-contact input, textarea {
+.form-control {
     padding: 17px 25px;
     border-radius: 25px;
     margin-bottom: 20px;
@@ -262,25 +253,25 @@ nav a {
     outline: none;
 }
 
-input::placeholder, textarea::placeholder {
+.form-control::placeholder {
     color: #A7D1D2;
 }
 
-.form-contact .form-txt {
+.form-txt {
     margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
     text-align: center;
 }
 
-.form-contact .form-txt a {
+.form-txt a {
     color: #63898C;
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
 }
 
-.form-contact .btn {
+.btn {
     font-size: 16px;
     color: white;
     border: 0;
@@ -290,9 +281,10 @@ input::placeholder, textarea::placeholder {
     cursor: pointer;
 }
 
-.form-contact .btn:hover {
+.btn:hover {
     background-color: #219399;
 }
+
 
 /* CONTACTO-END */
 
